@@ -2,7 +2,7 @@ FROM mhart/alpine-node:7.9.0
 LABEL maintainer "docker@coryodaniel.com"
 
 ENV JQ_VERSION="1.5-r3"
-ENV TERRAFORM_VERSION=0.9.3
+ENV TERRAFORM_VERSION=0.9.4
 ENV ZIP_VERSION="3.0-r4"
 
 RUN apk --no-cache update && apk --no-cache add \
@@ -10,6 +10,7 @@ RUN apk --no-cache update && apk --no-cache add \
     ca-certificates \
     git \
     "jq=${JQ_VERSION}" \
+    make \
     openssl \
     python \
     py-pip \
