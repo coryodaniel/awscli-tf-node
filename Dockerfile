@@ -2,7 +2,7 @@ FROM mhart/alpine-node:7.9.0
 LABEL maintainer "docker@coryodaniel.com"
 
 ENV JQ_VERSION="1.5-r3"
-ENV TERRAFORM_VERSION=0.9.4
+ENV TERRAFORM_VERSION=0.10.8
 ENV ZIP_VERSION="3.0-r4"
 
 RUN apk --no-cache update && apk --no-cache add \
